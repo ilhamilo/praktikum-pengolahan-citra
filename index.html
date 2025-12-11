@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah</title>
+    <style>
+        @font-face {
+            font-family: 'KOMTIT';
+            src: url('IMPACT__.ttf') format('truetype'); /* Pastikan path sesuai dengan lokasi file font */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'KOMTIT', sans-serif;
+            color: #000;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            background-image: url('Benteeng.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        .header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-with-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 15px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .circle-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            margin-bottom: 10px;
+        }
+
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-text {
+            text-align: left;
+            background: #d3d3d3;
+            padding: 10px;
+            border-radius: 5px; 
+            width: 100%;
+            box-sizing: border-box;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            color: #ffffff;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .footer .names {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleTranslation()">Toggle Translation</button>
+    <div class="container">
+        <div class="header">
+            <h1 id="header-text">Selamat datang di sejarah benteng orange</h1>
+        </div>
+
+        <div class="images-container">
+            <div class="image-with-text">
+                <div class="title" id="title1">AWAL MULA SEJARAH</div>
+<div class="circle-image">
+    <img src="Gambar1BentengOrange.jpg" alt="Gambar 1">
+</div>
+<div class="image-text" id="text1">
+    <p id="text1-id">Benteng Orange di Ternate, Maluku Utara, dibangun oleh VOC pada tahun 1613 setelah merebut wilayah tersebut dari Portugis. Benteng ini dinamai sesuai Wangsa Oranye-Nassau sebagai simbol kekuasaan Belanda dan difungsikan sebagai markas utama VOC di Maluku sebelum dipindahkan ke Ambon. Terletak strategis di tepi pantai, Benteng Orange berfungsi sebagai pusat perdagangan rempah-rempah, penyimpanan, dan pertahanan, serta menjadi bagian penting dalam hubungan VOC dengan Kesultanan Ternate, meskipun sering diwarnai konflik. Kini, benteng ini menjadi situs sejarah yang mencerminkan masa kolonial sekaligus daya tarik wisata budaya di Maluku Utara.</p>
+    <p id="text1-en" style="display: none;">The Orange Fort in Ternate, North Maluku, was built by the VOC in 1613 after seizing the area from the Portuguese. The fort was named after the House of Orange-Nassau as a symbol of Dutch power and served as the VOC's main headquarters in Maluku before being moved to Ambon. Strategically located on the coast, the Orange Fort functioned as a center for spice trade, storage, and defense, and became an important part of the VOC's relationship with the Sultanate of Ternate, although often marked by conflict. Today, the fort is a historical site that reflects the colonial era and serves as a cultural tourist attraction in North Maluku.</p>
+</div>
+</div>
+
+<div class="image-with-text">
+<div class="title" id="title2">PERKEMBANGAN SEIRING WAKTU</div>
+<div class="circle-image">
+    <img src="Gambar2BentengOrange.jpg" alt="Gambar 2">
+</div>
+<div class="image-text" id="text2">
+    <p id="text2-id">Seiring berjalannya waktu, Benteng Oranje mengalami beberapa renovasi dan penguatan. Pada abad ke-18, setelah kedatangan Belanda yang menggeser posisi Portugis, benteng ini diperkuat dengan semen dan tambahan bangunan kecil untuk meriam. Benteng ini juga berfungsi sebagai pusat pemantauan dan pertahanan terhadap bajak laut yang mengancam jalur perdagangan rempah-rempah di perairan Sulawesi.</p>
+    <p id="text2-en" style="display: none;">Over time, the Orange Fort underwent several renovations and reinforcements. In the 18th century, after the arrival of the Dutch who displaced the Portuguese, the fort was strengthened with cement and additional small buildings for cannons. The fort also served as a monitoring and defense center against pirates threatening the spice trade routes in the waters of Sulawesi.</p>
+</div>
+</div>
+
+<div class="image-with-text">
+<div class="title" id="title3">PUNCAK SEJARAH YANG MENCAPAI KEJAYAAN</div>
+<div class="circle-image">
+    <img src="Gambar3BentengOrange.jpg" alt="Gambar 3">
+</div>
+<div class="image-text" id="text3">
+    <p id="text3-id">Benteng Oranje mencapai puncak kejayaannya sebagai salah satu benteng pertahanan utama Belanda di kawasan Maluku. Dalam periode ini, benteng ini mampu menampung hingga 130 serdadu dan menjadi simbol kekuatan kolonial Belanda. Dengan posisi strategisnya, benteng ini tidak hanya berfungsi sebagai pertahanan tetapi juga sebagai pusat administrasi bagi Belanda di wilayah tersebut.</p>
+    <p id="text3-en" style="display: none;">The Orange Fort reached its peak as one of the main Dutch defense forts in the Maluku region. During this period, the fort could accommodate up to 130 soldiers and became a symbol of Dutch colonial power. With its strategic position, the fort served not only as a defense but also as an administrative center for the Dutch in the region.</p>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p>Dibuat Oleh:</p><div class="names">
+    <p>Muhammad Ilham Maudjud</p>
+</div>
+</div>
+</div>
+
+<script>
+function toggleTranslation() {
+// Mendapatkan elemen teks
+const textsId = [document.getElementById('text1-id'), document.getElementById('text2-id'), document.getElementById('text3-id')];
+const textsEn = [document.getElementById('text1-en'), document.getElementById('text2-en'), document.getElementById('text3-en')];
+
+// Mengubah tampilan teks
+for (let i = 0; i < textsId.length; i++) {
+    if (textsId[i].style.display === "none") {
+        textsId[i].style.display = "block"; // Tampilkan teks dalam bahasa Indonesia
+        textsEn[i].style.display = "none"; // Sembunyikan teks dalam bahasa Inggris
+    } else {
+        textsId[i].style.display = "none"; // Sembunyikan teks dalam bahasa Indonesia
+        textsEn[i].style.display = "block"; // Tampilkan teks dalam bahasa Inggris
+    }
+}
+
+// Mengubah teks header
+const headerText = document.getElementById('header-text');
+if (headerText.innerText === "Selamat datang di sejarah benteng orange") {
+    headerText.innerText = "Welcome to the history of the Orange Fort"; // Teks dalam bahasa Inggris
+} else {
+    headerText.innerText = "Selamat datang di sejarah benteng orange"; // Teks dalam bahasa Indonesia
+}
+}
+</script>
+</body>
+</html>
